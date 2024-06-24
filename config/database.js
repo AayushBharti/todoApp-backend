@@ -12,9 +12,13 @@ const dbConnect = () => {
     })
     .then(() => console.log("DB connected succesfully"))
     .catch((error) => {
-      console.log("issue in DB connection");
+      console.log("Issue in DB connection");
       console.log(error.message);
       process.exit(1);
+      // instructs Node.js to terminate the process synchronously 
+      //with an exit status of 1.
+      //0: Indicates that the process completed successfully
+      // without any errors.
     });
 };
 

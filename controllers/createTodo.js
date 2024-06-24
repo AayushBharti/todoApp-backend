@@ -24,3 +24,6 @@ exports.createTodo = async (req, res) => {
     });
   }
 };
+
+// res.status(500): Use this to indicate that there was a server-side error.
+// res.status(200): Use this to indicate that the request was successfully processed.
